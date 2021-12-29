@@ -41,6 +41,19 @@ Connect with me at [LinkedIn](https://www.linkedin.com/in/hugo-coutinho-aaa3b011
 Also, you can use this Project as you wish, be for study, be for make improvements or earn money with it!
 It's free!
 
+## Explaining with diagrams how I'm using VIPE and clean architecture for this project
+## Decoupled ViewController with tableViewController and their sections
+Here in this case on the main screen, I'm printing the SpaceX information and a rocket launch list. In my navigationBar I put a search to be able to filter the launches by the year. 
+
+My inheritance with UIKit it's up to the TableviewController to do it. My ViewController extends TableViewController and their only responsibility is starting the sections using their builder and implements their output.
+With this design basically my ViewController became a section manager. Completely decoupled it doesn't know nothing about the sections and their logics. Using the section builder and communicating with sectionInput protocol ViewController it's isolated not having any reference directly to sections being able to delete/refactor/new features without breaking nothing into it.
+
+Unfortunately, I break some solid principles in this case creating a direct reference of my ViewController into LaunchSection, I did this faster solution that the LaunchSection be able to implement the search Bar delegates and then filtering the launches by year.A side solution that for me suit better not breaking any solid principles it is given the launch request logic and filtering all the stuff responsibility to ViewController itself, and only passing the launch list to the launchBuilder. That way I'll continue following the good principles
+
+<div align="center">
+<img src="https://github.com/Hugo-Coutinho/SpaceX/blob/master/SpaceX/Core/Helper/readme%20gifs/view_controller_architecture.png?raw=true"/>
+</div>
+
 ### Installing
 
 **Cloning the Repository**
