@@ -68,6 +68,20 @@ To respect the uncle Bob clean architecture design, I like to use the encapsulat
 <img src="https://github.com/Hugo-Coutinho/SpaceX/blob/master/SpaceX/Core/Helper/readme%20gifs/encapsulation_with_section_tableviewcell.png?raw=true"/>
 </div>
 
+### VIPE with diagrams
+I'm using protocol to follow the solid principles, for example, creating an output and input interface for each layer so the communication between layers are being with protocols, so presenter doesn't know the interactor and section, and the interactor doesn't know service and presenter. So we have a dependency inversion here.
+
+Using the communication between interactor and presenter for example, we have a presenter holding reference of interactorInput, and implements their output, in this case as you can see in the diagram below, I'm creating a retain cycle because this parent child relation the arc can't deallocated, so to avoid the retain cycle inside of *launchInteractor* I put the output reference as weak.
+
+About the layers communication I'm using closure and delegates, closure of the service to the interactor, and after that using output delegate to the rest.
+
+The launch data that I get from networking requests until to be ready into section, pass through some changes. Starting with service getting the Data and passing by closure to the interactor, interactor do the job of decoding into an entity and then passing to the presenter, presenter now gets the entity and pass to the section a domain instance with all business logic resolved. So the section and the cells only know the domain and nothing else.
+
+About the domain, I like to work with a concrete domain reference and a domain for each mini vipe design pattern, but the cons of this approach it that isn't able to reuse this domain in others feature. Domain for me has all the business logic and he can resolve itself transforming the entity into a viewdata.
+
+<div align="center">
+<img src="https://github.com/Hugo-Coutinho/SpaceX/blob/master/SpaceX/Core/Helper/readme%20gifs/vipe.png?raw=true"/>
+</div>
 
 ### Installing
 
