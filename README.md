@@ -41,6 +41,39 @@ Connect with me at [LinkedIn](https://www.linkedin.com/in/hugo-coutinho-aaa3b011
 Also, you can use this Project as you wish, be for study, be for make improvements or earn money with it!
 It's free!
 
+### Installing
+
+**Cloning the Repository**
+
+```swift
+$ git clone https://github.com/Hugo-Coutinho/SpaceX.git
+
+$ cd SpaceX
+```
+
+**Installing dependencies**
+
+```swift
+$ pod install
+```
+
+## Built With
+
+- [Nuke](https://github.com/kean/Nuke) - Image Loading System
+
+
+## Contributing
+
+You can send how many PR's do you want, I'll be glad to analyse and accept them! And if you have any question about the project...
+
+Email-me: hugocoutinho2011@gmail.com
+
+Connect with me at [LinkedIn](https://www.linkedin.com/in/hugo-coutinho-aaa3b0114/?locale=en_US)
+
+Check my development techniques: [My personal study annotations](http://bloghugocoutinho.wordpress.com)
+
+Thank you!
+
 ## Explaining with diagrams how I'm using VIPE and clean architecture for this project
 
 ### Decoupled ViewController with tableViewController and their sections
@@ -83,36 +116,39 @@ About the domain, I like to work with a concrete domain reference and a domain f
 <img src="https://github.com/Hugo-Coutinho/SpaceX/blob/master/SpaceX/Core/Helper/readme%20gifs/vipe.png?raw=true"/>
 </div>
 
-### Installing
+### Repository structure
+In this application I created a BaseRequest that access the URLSession for networking, this BaseRequest it's a reusable service with an input protocol, so every service has reference to the input protocol and not the concrete BaseRequest following the dependency inversion principle. They responsibility it's only getting the data and pass by a closure.
 
-**Cloning the Repository**
+<div align="center">
+<img src="https://github.com/Hugo-Coutinho/SpaceX/blob/master/SpaceX/Core/Helper/readme%20gifs/Repository_structure.png?raw=true"/>
+</div>
 
-```swift
-$ git clone https://github.com/Hugo-Coutinho/SpaceX.git
+### My Clean Architecture
+Following uncle Bob clean architecture design we have 4 rings, one inside the other:
+1. The blue one it's supposed to be exclusive for UI and external Frameworks
+2. The green one, it's That when we create our view Controller and our adapter from external libraries
+3. The orange one, it's responsible for all the application business logic
+4. The smaller yellow ring supposed to be the entities
 
-$ cd SpaceX
-```
+Now looking from the smallest ring to the biggest the only one that can know entity should be the use case, it means viewController cannot know entity only the domain.
+Our controllers and adapters has a reference from use case (domain) totally don't knowing business logic and data formatting.
 
-**Installing dependencies**
+Using encapsulation I'm protecting my application for external stuffs as you can see the blue biggest ring we have external but inside of it, I'm using an adapter so if something happens to the library or if I just want to not use it anymore I can simply remove from the project and anything won't gonna break or change.
+At below you can see the rings with my solution.
 
-```swift
-$ pod install
-```
+<div align="center">
+<img src="https://github.com/Hugo-Coutinho/SpaceX/blob/master/SpaceX/Core/Helper/readme%20gifs/clean_architecture.png?raw=true"/>
+</div>
 
-## Built With
+### The solid principles power for unit testing as well
+How can I do unit testing for all the VIPE layers with fixture data?
+Simple, with one interface, following open and closed principle that says open for extension but closed for modifications. I can extend my BaseRequest to the error scenario and for the success scenario. For the success I can just get the Json and start the test flow.
 
-- [Nuke](https://github.com/kean/Nuke) - Image Loading System
+Take a look at the diagram below and you can see that I'm using the BaseRequestInput as a boundary for the spies and the concrete BaseRequest.
+
+<div align="center">
+<img src="https://github.com/Hugo-Coutinho/SpaceX/blob/master/SpaceX/Core/Helper/readme%20gifs/base_request_architecture.png?raw=true"/>
+</div>
 
 
-## Contributing
-
-You can send how many PR's do you want, I'll be glad to analyse and accept them! And if you have any question about the project...
-
-Email-me: hugocoutinho2011@gmail.com
-
-Connect with me at [LinkedIn](https://www.linkedin.com/in/hugo-coutinho-aaa3b0114/?locale=en_US)
-
-Check my development techniques: [My personal study annotations](http://bloghugocoutinho.wordpress.com)
-
-Thank you!
 
