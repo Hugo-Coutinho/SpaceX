@@ -19,11 +19,12 @@ class HomeCompanySectionInteractor: HomeCompanySectionInteractorInput {
         self.service = service
     }
     func getInfo() {
-        service.getInfo { [unowned self] dataResult in
+        service.getInfo { [weak self] dataResult in
+            guard let strongSelf = self else { return }
             if let data = dataResult {
-                self.decodeInfo(data: data)
+                strongSelf.decodeInfo(data: data)
             } else {
-                output?.removeSection()
+                strongSelf.output?.removeSection()
             }
         }
     }

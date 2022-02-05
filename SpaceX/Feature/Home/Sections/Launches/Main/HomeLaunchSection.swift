@@ -38,9 +38,42 @@ final class HomeLaunchSection: Section {
     func loadMoreItems() {
         presenter?.getLaunch(offSet: launch.launches.count)
     }
+
+    func searchBar(searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
+        switch selectedScope {
+        case Constant.Home.ScopeButtons.asc.rawValue:
+            currentScopeButton = .asc
+            self.output?.reloadSection(section: self, animation: .automatic)
+        default:
+            currentScopeButton = .desc
+            self.output?.reloadSection(section: self, animation: .automatic)
+        }
+    }
+
+    func updateSearchResults(for searchController: UISearchController) {
+        let searchBar = searchController.searchBar
+        let text = searchBar.text ?? ""
+        let isTextNotEmpty = !text.isEmpty
+        switch currentScopeButton {
+        case .desc:
+            if isTextNotEmpty {
+                filterContentForSearchText(text)
+            } else {
+                items = sortingContentForScopeButton()
+                self.output?.reloadSection(section: self, animation: .automatic)
+            }
+        case .asc:
+            if isTextNotEmpty {
+                filterContentForSearchText(text)
+            } else {
+                items = sortingContentForScopeButton()
+                self.output?.reloadSection(section: self, animation: .automatic)
+            }
+        }
+    }
 }
 
-// MARK: - AUX METHODS -
+// MARK: - ASSISTANT METHODS -
 extension HomeLaunchSection {
     private func handleScroll(row: Int) {
         if row == items.count - 1 {
@@ -140,7 +173,7 @@ extension HomeLaunchSection: TableSectionHeaderInput {
 // MARK: - PRESENTER OUTPUT -
 extension HomeLaunchSection : HomeLaunchSectionPresenterOutput {
     func handleSuccess(domain: HomeLaunchSectionDomain) {
-        if self.items.first as? LaunchDomain  == nil { self.items.removeFirst() }
+        if self.items.first as? LaunchDomain  == nil && !self.items.isEmpty { self.items.removeFirst() }
         guard !domain.launches.isEmpty else { isLastPage = true; return }
         scene = .sceneSuccess
         launch.launches.append(contentsOf: domain.launches)
@@ -151,45 +184,6 @@ extension HomeLaunchSection : HomeLaunchSectionPresenterOutput {
 
     func removeSection() {
         self.output?.removeItem(from: 0, in: self, animation: .fade, completion: nil)
-    }
-}
-
-// MARK: - SEARCHING UPDATING -
-extension HomeLaunchSection: UISearchResultsUpdating {
-  func updateSearchResults(for searchController: UISearchController) {
-      let searchBar = searchController.searchBar
-      let text = searchBar.text ?? ""
-      let isTextNotEmpty = !text.isEmpty
-      switch currentScopeButton {
-      case .desc:
-          if isTextNotEmpty {
-              filterContentForSearchText(text)
-          } else {
-              items = sortingContentForScopeButton()
-              self.output?.reloadSection(section: self, animation: .automatic)
-          }
-      case .asc:
-          if isTextNotEmpty {
-              filterContentForSearchText(text)
-          } else {
-              items = sortingContentForScopeButton()
-              self.output?.reloadSection(section: self, animation: .automatic)
-          }
-      }
-  }
-}
-
-// MARK: - SEARCHBAR DELEGATE -
-extension HomeLaunchSection: UISearchBarDelegate {
-    func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
-        switch selectedScope {
-        case Constant.Home.ScopeButtons.asc.rawValue:
-            currentScopeButton = .asc
-            self.output?.reloadSection(section: self, animation: .automatic)
-        default:
-            currentScopeButton = .desc
-            self.output?.reloadSection(section: self, animation: .automatic)
-        }
     }
 }
 

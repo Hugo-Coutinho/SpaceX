@@ -11,40 +11,57 @@ import UIKit
 class ViewController: TableViewController {
 
     // MARK: - HOME PROPERTIES -
-    var launchSection: HomeLaunchSection?
-    let searchController = UISearchController(searchResultsController: nil)
+    let searchController: UISearchController = {
+        let searchController = UISearchController(searchResultsController: nil)
+        searchController.searchBar.accessibilityTraits = .image
+        searchController.searchBar.searchTextField.accessibilityLabel = "homeSearchBarLabel"
+        return searchController
+    }()
+
+    var homeSections: [Section] = []
+
+    private var launchSection: HomeLaunchSection? {
+        return homeSections.compactMap({
+            guard let launch = $0 as? HomeLaunchSection else { return nil }
+            return launch
+        }).first
+    }
 
     // MARK: - LIFE CYCLE -
     override func viewWillLayoutSubviews() {
         title = Constant.Home.homeTitle
-        searchController.searchResultsUpdater = launchSection
+        searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.placeholder = Constant.Home.searchBarPlaceHolder
         searchController.searchBar.scopeButtonTitles = [
             Constant.Home.ScopeButtons.asc.name,
             Constant.Home.ScopeButtons.desc.name
         ]
-        searchController.searchBar.delegate = launchSection
+        searchController.searchBar.delegate = self
         searchController.searchBar.showsScopeBar = true
         navigationItem.searchController = searchController
-
         definesPresentationContext = true
         navigationItem.hidesSearchBarWhenScrolling = false
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        launchSection = HomeLaunchSectionBuilder().make(output: self)
-        guard let launchSection = launchSection else { return }
-        sections = [
-            HomeCompanySectionBuilder().make(output: self),
-            launchSection
-        ]
+        homeSections.forEach({ sections.append($0) })
         tableView.reloadData()
     }
 }
 
+// MARK: - SEARCHING UPDATING -
+extension ViewController: UISearchResultsUpdating {
+  func updateSearchResults(for searchController: UISearchController) {
+      launchSection?.updateSearchResults(for: searchController)
+  }
+}
+
 // MARK: - SEARCHBAR DELEGATE
 extension ViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
+        launchSection?.searchBar(searchBar: searchBar, selectedScopeButtonIndexDidChange: selectedScope)
+    }
 }
 
 // MARK: - COMPANY SECTION OUTPUT -

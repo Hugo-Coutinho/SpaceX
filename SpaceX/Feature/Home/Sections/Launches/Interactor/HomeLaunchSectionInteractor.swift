@@ -21,11 +21,12 @@ class HomeLaunchSectionInteractor: HomeLaunchSectionInteractorInput {
 
     // MARK: - INPUT METHODS -
     func getLaunches(offSet: Int) {
-        service.getLaunches(offSet: offSet) { [unowned self] dataResult in
+        service.getLaunches(offSet: offSet) { [weak self] dataResult in
+            guard let strongSelf = self else { return }
             if let data = dataResult {
-                self.decodeLaunches(data: data)
+                strongSelf.decodeLaunches(data: data)
             } else {
-                output?.removeSection()
+                strongSelf.output?.removeSection()
             }
         }
     }

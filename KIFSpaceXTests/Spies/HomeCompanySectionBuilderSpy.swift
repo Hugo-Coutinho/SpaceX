@@ -1,18 +1,14 @@
 //
-//  HomeCompanySectionSectionBuilder.swift
-//  SpaceX
+//  HomeCompanySectionBuilderSpy.swift
+//  KIFSpaceXTests
 //
-//  Created by hugo.coutinho on 16/12/21.
-//  Copyright © 2021 Mindera. All rights reserved.
+//  Created by hugo.coutinho on 02/02/22.
 //
 
 import Foundation
+@testable import SpaceX
 
-final class HomeCompanySectionBuilder: HomeCompanySectionBuilderInput {
-
-    // MARK: - CONSTRUCTOR -
-    init(){}
-
+final class HomeCompanySectionBuilderSpy: HomeCompanySectionBuilderInput {
     func make(output: HomeCompanySectionOutput) -> HomeCompanySection {
         let section = HomeCompanySection()
         let presenter = makePresenter(section: section)
@@ -22,19 +18,14 @@ final class HomeCompanySectionBuilder: HomeCompanySectionBuilderInput {
         section.startSection()
         return section
     }
-}
 
-// MARK: - AUX METHODS -
-extension HomeCompanySectionBuilder {
-    // MARK: - PRESENTER BUILDER -
     private func makePresenter(section: HomeCompanySection) -> HomeCompanySectionPresenter {
-        let service = HomeCompanySectionService(baseRequest: BaseRequest())
+        let service = HomeCompanySectionService(baseRequest: BaseRequestSuccessHandlerSpy(service: .company))
         let interactor = HomeCompanySectionInteractor(service: service)
         let presenter = HomeCompanySectionPresenter(input: interactor)
         interactor.output = presenter
         presenter.output = section
         return presenter
     }
+
 }
-
-

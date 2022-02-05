@@ -13,6 +13,12 @@ target 'SpaceX' do
     # Pods for testing
   end
 
+  target 'KIFSpaceXTests' do
+    inherit! :search_paths
+    # Pods for testing
+   pod 'KIF'
+  end
+
   target 'SpaceXUITests' do
     # Pods for testing
   end

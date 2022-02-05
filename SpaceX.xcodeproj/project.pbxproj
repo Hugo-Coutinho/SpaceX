@@ -69,7 +69,18 @@
 		098F83EE277A414D00E89652 /* HomeLaunchSectionSuccessTableViewCellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F83EC277A414D00E89652 /* HomeLaunchSectionSuccessTableViewCellUITests.swift */; };
 		098F83EF277A453200E89652 /* company_info_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 098F83D6277A412600E89652 /* company_info_data.json */; };
 		098F83F0277A453500E89652 /* launch_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 098F83D7277A412600E89652 /* launch_data.json */; };
+		09BA2FD027ADEFC30045C455 /* HomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BA2FCF27ADEFC30045C455 /* HomeBuilder.swift */; };
+		09BA2FD227ADF0500045C455 /* HomeBuilderInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BA2FD127ADF0500045C455 /* HomeBuilderInput.swift */; };
+		09BA2FD427ADF5F40045C455 /* HomeBuilderSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BA2FD327ADF5F40045C455 /* HomeBuilderSpy.swift */; };
+		09D2E4E927AB4D9000300A38 /* KIFSpaceXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2E4E727AB4D9000300A38 /* KIFSpaceXTests.swift */; };
+		09D2E4EA27AB4D9000300A38 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2E4E827AB4D9000300A38 /* UIExtension.swift */; };
+		09D2E4EC27AB4DC300300A38 /* HomeLaunchSectionBuilderInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2E4EB27AB4DC300300A38 /* HomeLaunchSectionBuilderInput.swift */; };
+		09D2E4EE27AB4DCC00300A38 /* HomeCompanySectionBuilderInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2E4ED27AB4DCC00300A38 /* HomeCompanySectionBuilderInput.swift */; };
+		09D2E4F127AB589E00300A38 /* HomeLaunchSectionBuilderSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2E4F027AB589E00300A38 /* HomeLaunchSectionBuilderSpy.swift */; };
+		09D2E4F327AB5A8D00300A38 /* HomeCompanySectionBuilderSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2E4F227AB5A8D00300A38 /* HomeCompanySectionBuilderSpy.swift */; };
+		09D2E4F527AB5B4000300A38 /* BaseRequestSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2E4F427AB5B4000300A38 /* BaseRequestSpy.swift */; };
 		0DC40BF50C4725939A6EE53C /* Pods_SpaceX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 857F5AD4225F7AC0445FE989 /* Pods_SpaceX.framework */; };
+		A499395CAE79F04E1A96D0A0 /* Pods_KIFSpaceXTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73B054623BAAA3D61472E676 /* Pods_KIFSpaceXTests.framework */; };
 		B91E1EBD7C846DB180C0F797 /* Pods_SpaceXTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A9EA75664534EEABFA451C8 /* Pods_SpaceXTests.framework */; };
 		F064EECFC15755243D7F48A2 /* Pods_SpaceX_SpaceXUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D70A448AB8A2F0AC15356C6 /* Pods_SpaceX_SpaceXUITests.framework */; };
 /* End PBXBuildFile section */
@@ -83,6 +94,13 @@
 			remoteInfo = SpaceX;
 		};
 		098F8345277A3FF400E89652 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 098F831C277A3FF000E89652 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 098F8323277A3FF000E89652;
+			remoteInfo = SpaceX;
+		};
+		09D2E4E227AB4CCF00300A38 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 098F831C277A3FF000E89652 /* Project object */;
 			proxyType = 1;
@@ -156,13 +174,27 @@
 		098F83D9277A412700E89652 /* DateHelperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelperTests.swift; sourceTree = "<group>"; };
 		098F83EB277A414D00E89652 /* HomeCompanySectionSuccessTableViewCellUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCompanySectionSuccessTableViewCellUITests.swift; sourceTree = "<group>"; };
 		098F83EC277A414D00E89652 /* HomeLaunchSectionSuccessTableViewCellUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeLaunchSectionSuccessTableViewCellUITests.swift; sourceTree = "<group>"; };
+		09BA2FCF27ADEFC30045C455 /* HomeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBuilder.swift; sourceTree = "<group>"; };
+		09BA2FD127ADF0500045C455 /* HomeBuilderInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBuilderInput.swift; sourceTree = "<group>"; };
+		09BA2FD327ADF5F40045C455 /* HomeBuilderSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBuilderSpy.swift; sourceTree = "<group>"; };
+		09D2E4DE27AB4CCF00300A38 /* KIFSpaceXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KIFSpaceXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09D2E4E727AB4D9000300A38 /* KIFSpaceXTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KIFSpaceXTests.swift; path = ../../../../Downloads/SpaceX/KIFSpaceXTests.swift; sourceTree = "<group>"; };
+		09D2E4E827AB4D9000300A38 /* UIExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIExtension.swift; path = ../../../../Downloads/SpaceX/UIExtension.swift; sourceTree = "<group>"; };
+		09D2E4EB27AB4DC300300A38 /* HomeLaunchSectionBuilderInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeLaunchSectionBuilderInput.swift; path = ../../../../../../../../../Downloads/SpaceX/HomeLaunchSectionBuilderInput.swift; sourceTree = "<group>"; };
+		09D2E4ED27AB4DCC00300A38 /* HomeCompanySectionBuilderInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeCompanySectionBuilderInput.swift; path = ../../../../../../../../../Downloads/SpaceX/HomeCompanySectionBuilderInput.swift; sourceTree = "<group>"; };
+		09D2E4F027AB589E00300A38 /* HomeLaunchSectionBuilderSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLaunchSectionBuilderSpy.swift; sourceTree = "<group>"; };
+		09D2E4F227AB5A8D00300A38 /* HomeCompanySectionBuilderSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCompanySectionBuilderSpy.swift; sourceTree = "<group>"; };
+		09D2E4F427AB5B4000300A38 /* BaseRequestSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseRequestSpy.swift; path = SpaceXTests/Spies/BaseRequestSpy.swift; sourceTree = SOURCE_ROOT; };
 		23ACA15E8ABAF2277B53C5EE /* Pods-SpaceX-SpaceXUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX-SpaceXUITests.debug.xcconfig"; path = "Target Support Files/Pods-SpaceX-SpaceXUITests/Pods-SpaceX-SpaceXUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4F82BC29480F2F06AD8A4B8F /* Pods-SpaceX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX.debug.xcconfig"; path = "Target Support Files/Pods-SpaceX/Pods-SpaceX.debug.xcconfig"; sourceTree = "<group>"; };
 		5AE4B55A4A4F1E98850E36C0 /* Pods-SpaceX-SpaceXUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX-SpaceXUITests.release.xcconfig"; path = "Target Support Files/Pods-SpaceX-SpaceXUITests/Pods-SpaceX-SpaceXUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5D70A448AB8A2F0AC15356C6 /* Pods_SpaceX_SpaceXUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceX_SpaceXUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DBB02ACBF4FA06E720CB886 /* Pods-KIFSpaceXTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIFSpaceXTests.release.xcconfig"; path = "Target Support Files/Pods-KIFSpaceXTests/Pods-KIFSpaceXTests.release.xcconfig"; sourceTree = "<group>"; };
+		73B054623BAAA3D61472E676 /* Pods_KIFSpaceXTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KIFSpaceXTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		857F5AD4225F7AC0445FE989 /* Pods_SpaceX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A9EA75664534EEABFA451C8 /* Pods_SpaceXTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceXTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CA4DFF274483FEF448DD5D3 /* Pods-SpaceXTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceXTests.release.xcconfig"; path = "Target Support Files/Pods-SpaceXTests/Pods-SpaceXTests.release.xcconfig"; sourceTree = "<group>"; };
+		937E9387B3D44D5CE9159743 /* Pods-KIFSpaceXTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIFSpaceXTests.debug.xcconfig"; path = "Target Support Files/Pods-KIFSpaceXTests/Pods-KIFSpaceXTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E67C714D6DF76E3E55514FE9 /* Pods-SpaceXTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceXTests.debug.xcconfig"; path = "Target Support Files/Pods-SpaceXTests/Pods-SpaceXTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EF74FBC445FDAC89C0478BD6 /* Pods-SpaceX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX.release.xcconfig"; path = "Target Support Files/Pods-SpaceX/Pods-SpaceX.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -192,6 +224,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		09D2E4DB27AB4CCF00300A38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A499395CAE79F04E1A96D0A0 /* Pods_KIFSpaceXTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -201,6 +241,7 @@
 				098F8326277A3FF000E89652 /* SpaceX */,
 				098F833D277A3FF400E89652 /* SpaceXTests */,
 				098F8347277A3FF400E89652 /* SpaceXUITests */,
+				09D2E4DF27AB4CCF00300A38 /* KIFSpaceXTests */,
 				098F8325277A3FF000E89652 /* Products */,
 				89D020B749E772E719EF303F /* Pods */,
 				7C1AF5931D06B06D1304AF2E /* Frameworks */,
@@ -213,6 +254,7 @@
 				098F8324277A3FF000E89652 /* SpaceX.app */,
 				098F833A277A3FF400E89652 /* SpaceXTests.xctest */,
 				098F8344277A3FF400E89652 /* SpaceXUITests.xctest */,
+				09D2E4DE27AB4CCF00300A38 /* KIFSpaceXTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -262,6 +304,7 @@
 		098F8358277A405900E89652 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				09BA2FCE27ADEF540045C455 /* Builder */,
 				098F8359277A405900E89652 /* Sections */,
 				098F8382277A405900E89652 /* View */,
 			);
@@ -337,6 +380,7 @@
 		098F8367277A405900E89652 /* Builder */ = {
 			isa = PBXGroup;
 			children = (
+				09D2E4EB27AB4DC300300A38 /* HomeLaunchSectionBuilderInput.swift */,
 				098F8368277A405900E89652 /* HomeLaunchSectionBuilder.swift */,
 			);
 			path = Builder;
@@ -419,6 +463,7 @@
 		098F837B277A405900E89652 /* Builder */ = {
 			isa = PBXGroup;
 			children = (
+				09D2E4ED27AB4DCC00300A38 /* HomeCompanySectionBuilderInput.swift */,
 				098F837C277A405900E89652 /* HomeCompanySectionBuilder.swift */,
 			);
 			path = Builder;
@@ -570,7 +615,6 @@
 			isa = PBXGroup;
 			children = (
 				098F83C3277A412600E89652 /* Launches */,
-				098F83C9277A412600E89652 /* HomeHeader */,
 				098F83CA277A412600E89652 /* Company */,
 			);
 			path = Sections;
@@ -586,13 +630,6 @@
 				098F83C8277A412600E89652 /* HomeLaunchSectionPresenterTests.swift */,
 			);
 			path = Launches;
-			sourceTree = "<group>";
-		};
-		098F83C9277A412600E89652 /* HomeHeader */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = HomeHeader;
 			sourceTree = "<group>";
 		};
 		098F83CA277A412600E89652 /* Company */ = {
@@ -635,12 +672,43 @@
 			path = HelperTests;
 			sourceTree = "<group>";
 		};
+		09BA2FCE27ADEF540045C455 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				09BA2FCF27ADEFC30045C455 /* HomeBuilder.swift */,
+				09BA2FD127ADF0500045C455 /* HomeBuilderInput.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		09D2E4DF27AB4CCF00300A38 /* KIFSpaceXTests */ = {
+			isa = PBXGroup;
+			children = (
+				09D2E4EF27AB584C00300A38 /* Spies */,
+				09D2E4E727AB4D9000300A38 /* KIFSpaceXTests.swift */,
+				09D2E4E827AB4D9000300A38 /* UIExtension.swift */,
+			);
+			path = KIFSpaceXTests;
+			sourceTree = "<group>";
+		};
+		09D2E4EF27AB584C00300A38 /* Spies */ = {
+			isa = PBXGroup;
+			children = (
+				09D2E4F427AB5B4000300A38 /* BaseRequestSpy.swift */,
+				09D2E4F027AB589E00300A38 /* HomeLaunchSectionBuilderSpy.swift */,
+				09D2E4F227AB5A8D00300A38 /* HomeCompanySectionBuilderSpy.swift */,
+				09BA2FD327ADF5F40045C455 /* HomeBuilderSpy.swift */,
+			);
+			path = Spies;
+			sourceTree = "<group>";
+		};
 		7C1AF5931D06B06D1304AF2E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				857F5AD4225F7AC0445FE989 /* Pods_SpaceX.framework */,
 				5D70A448AB8A2F0AC15356C6 /* Pods_SpaceX_SpaceXUITests.framework */,
 				8A9EA75664534EEABFA451C8 /* Pods_SpaceXTests.framework */,
+				73B054623BAAA3D61472E676 /* Pods_KIFSpaceXTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -654,6 +722,8 @@
 				5AE4B55A4A4F1E98850E36C0 /* Pods-SpaceX-SpaceXUITests.release.xcconfig */,
 				E67C714D6DF76E3E55514FE9 /* Pods-SpaceXTests.debug.xcconfig */,
 				8CA4DFF274483FEF448DD5D3 /* Pods-SpaceXTests.release.xcconfig */,
+				937E9387B3D44D5CE9159743 /* Pods-KIFSpaceXTests.debug.xcconfig */,
+				6DBB02ACBF4FA06E720CB886 /* Pods-KIFSpaceXTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -719,6 +789,26 @@
 			productReference = 098F8344277A3FF400E89652 /* SpaceXUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		09D2E4DD27AB4CCF00300A38 /* KIFSpaceXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09D2E4E627AB4CCF00300A38 /* Build configuration list for PBXNativeTarget "KIFSpaceXTests" */;
+			buildPhases = (
+				17E99720198A0DE6986DFFD9 /* [CP] Check Pods Manifest.lock */,
+				09D2E4DA27AB4CCF00300A38 /* Sources */,
+				09D2E4DB27AB4CCF00300A38 /* Frameworks */,
+				09D2E4DC27AB4CCF00300A38 /* Resources */,
+				2796D7A438FB730C5AC1F241 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09D2E4E327AB4CCF00300A38 /* PBXTargetDependency */,
+			);
+			name = KIFSpaceXTests;
+			productName = KIFSpaceXTests;
+			productReference = 09D2E4DE27AB4CCF00300A38 /* KIFSpaceXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -741,6 +831,10 @@
 						LastSwiftMigration = 1320;
 						TestTargetID = 098F8323277A3FF000E89652;
 					};
+					09D2E4DD27AB4CCF00300A38 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 098F8323277A3FF000E89652;
+					};
 				};
 			};
 			buildConfigurationList = 098F831F277A3FF000E89652 /* Build configuration list for PBXProject "SpaceX" */;
@@ -759,6 +853,7 @@
 				098F8323277A3FF000E89652 /* SpaceX */,
 				098F8339277A3FF400E89652 /* SpaceXTests */,
 				098F8343277A3FF400E89652 /* SpaceXUITests */,
+				09D2E4DD27AB4CCF00300A38 /* KIFSpaceXTests */,
 			);
 		};
 /* End PBXProject section */
@@ -792,9 +887,55 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		09D2E4DC27AB4CCF00300A38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		17E99720198A0DE6986DFFD9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KIFSpaceXTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2796D7A438FB730C5AC1F241 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KIFSpaceXTests/Pods-KIFSpaceXTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KIFSpaceXTests/Pods-KIFSpaceXTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KIFSpaceXTests/Pods-KIFSpaceXTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		32C01D53FDBFD0DE8E086EC1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -905,6 +1046,7 @@
 				098F8396277A405900E89652 /* HomeCompanySection.swift in Sources */,
 				098F83BE277A409F00E89652 /* Thread.swift in Sources */,
 				098F83B9277A409F00E89652 /* Constant.swift in Sources */,
+				09D2E4EC27AB4DC300300A38 /* HomeLaunchSectionBuilderInput.swift in Sources */,
 				098F83BC277A409F00E89652 /* BaseRequest.swift in Sources */,
 				098F8399277A405900E89652 /* HomeCompanySectionInteractor.swift in Sources */,
 				098F83B5277A409F00E89652 /* SectionInput.swift in Sources */,
@@ -918,8 +1060,10 @@
 				098F839B277A405900E89652 /* ViewController.swift in Sources */,
 				098F83B4277A409F00E89652 /* TableViewController.swift in Sources */,
 				098F8390277A405900E89652 /* InfoEntity.swift in Sources */,
+				09BA2FD227ADF0500045C455 /* HomeBuilderInput.swift in Sources */,
 				098F838D277A405900E89652 /* HomeLaunchSectionDomain.swift in Sources */,
 				098F8388277A405900E89652 /* HomeLaunchSectionSuccessTableViewCell.swift in Sources */,
+				09D2E4EE27AB4DCC00300A38 /* HomeCompanySectionBuilderInput.swift in Sources */,
 				098F8387277A405900E89652 /* HomeLaunchSectionPresenterInput.swift in Sources */,
 				098F839A277A405900E89652 /* HomeCompanySectionInteractorInput.swift in Sources */,
 				098F83BA277A409F00E89652 /* ReusableCellIdentifiable.swift in Sources */,
@@ -940,6 +1084,7 @@
 				098F83BB277A409F00E89652 /* DateHelper.swift in Sources */,
 				098F838E277A405900E89652 /* HomeLaunchSectionInteractor.swift in Sources */,
 				098F838B277A405900E89652 /* HomeLaunchSection.swift in Sources */,
+				09BA2FD027ADEFC30045C455 /* HomeBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -974,6 +1119,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		09D2E4DA27AB4CCF00300A38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09D2E4E927AB4D9000300A38 /* KIFSpaceXTests.swift in Sources */,
+				09BA2FD427ADF5F40045C455 /* HomeBuilderSpy.swift in Sources */,
+				09D2E4F327AB5A8D00300A38 /* HomeCompanySectionBuilderSpy.swift in Sources */,
+				09D2E4F527AB5B4000300A38 /* BaseRequestSpy.swift in Sources */,
+				09D2E4EA27AB4D9000300A38 /* UIExtension.swift in Sources */,
+				09D2E4F127AB589E00300A38 /* HomeLaunchSectionBuilderSpy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -986,6 +1144,11 @@
 			isa = PBXTargetDependency;
 			target = 098F8323277A3FF000E89652 /* SpaceX */;
 			targetProxy = 098F8345277A3FF400E89652 /* PBXContainerItemProxy */;
+		};
+		09D2E4E327AB4CCF00300A38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 098F8323277A3FF000E89652 /* SpaceX */;
+			targetProxy = 09D2E4E227AB4CCF00300A38 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1270,6 +1433,42 @@
 			};
 			name = Release;
 		};
+		09D2E4E427AB4CCF00300A38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 937E9387B3D44D5CE9159743 /* Pods-KIFSpaceXTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = takeoutcentral.mobile.ios.KIFSpaceXTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpaceX.app/SpaceX";
+			};
+			name = Debug;
+		};
+		09D2E4E527AB4CCF00300A38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DBB02ACBF4FA06E720CB886 /* Pods-KIFSpaceXTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = takeoutcentral.mobile.ios.KIFSpaceXTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpaceX.app/SpaceX";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1305,6 +1504,15 @@
 			buildConfigurations = (
 				098F8355277A3FF400E89652 /* Debug */,
 				098F8356277A3FF400E89652 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09D2E4E627AB4CCF00300A38 /* Build configuration list for PBXNativeTarget "KIFSpaceXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09D2E4E427AB4CCF00300A38 /* Debug */,
+				09D2E4E527AB4CCF00300A38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
