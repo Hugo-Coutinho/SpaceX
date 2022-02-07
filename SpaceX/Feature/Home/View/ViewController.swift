@@ -13,7 +13,13 @@ class ViewController: TableViewController {
     // MARK: - HOME PROPERTIES -
     let searchController: UISearchController = {
         let searchController = UISearchController(searchResultsController: nil)
-        searchController.searchBar.accessibilityTraits = .image
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.showsScopeBar = true
+        searchController.searchBar.placeholder = Constant.Home.searchBarPlaceHolder
+        searchController.searchBar.scopeButtonTitles = [
+            Constant.Home.ScopeButtons.asc.name,
+            Constant.Home.ScopeButtons.desc.name
+        ]
         searchController.searchBar.searchTextField.accessibilityLabel = "homeSearchBarLabel"
         return searchController
     }()
@@ -31,14 +37,7 @@ class ViewController: TableViewController {
     override func viewWillLayoutSubviews() {
         title = Constant.Home.homeTitle
         searchController.searchResultsUpdater = self
-        searchController.obscuresBackgroundDuringPresentation = false
-        searchController.searchBar.placeholder = Constant.Home.searchBarPlaceHolder
-        searchController.searchBar.scopeButtonTitles = [
-            Constant.Home.ScopeButtons.asc.name,
-            Constant.Home.ScopeButtons.desc.name
-        ]
         searchController.searchBar.delegate = self
-        searchController.searchBar.showsScopeBar = true
         navigationItem.searchController = searchController
         definesPresentationContext = true
         navigationItem.hidesSearchBarWhenScrolling = false

@@ -20,6 +20,7 @@ public class TableViewController: UIViewController {
         tableView.bounces = false
         tableView.separatorStyle = .singleLine
         tableView.accessibilityIdentifier = "tableViewControllerID"
+        tableView.accessibilityLabel = "tableViewControllerID"
         return tableView
     }()
 

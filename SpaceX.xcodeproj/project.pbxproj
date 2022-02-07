@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		093D6EB827B099FD0039B85B /* SpaceXKifTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093D6EB727B099FD0039B85B /* SpaceXKifTests.swift */; };
 		098F8328277A3FF000E89652 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F8327277A3FF000E89652 /* AppDelegate.swift */; };
 		098F832A277A3FF000E89652 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F8329277A3FF000E89652 /* SceneDelegate.swift */; };
 		098F832F277A3FF000E89652 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 098F832D277A3FF000E89652 /* Main.storyboard */; };
@@ -72,7 +73,6 @@
 		09BA2FD027ADEFC30045C455 /* HomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BA2FCF27ADEFC30045C455 /* HomeBuilder.swift */; };
 		09BA2FD227ADF0500045C455 /* HomeBuilderInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BA2FD127ADF0500045C455 /* HomeBuilderInput.swift */; };
 		09BA2FD427ADF5F40045C455 /* HomeBuilderSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BA2FD327ADF5F40045C455 /* HomeBuilderSpy.swift */; };
-		09D2E4E927AB4D9000300A38 /* KIFSpaceXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2E4E727AB4D9000300A38 /* KIFSpaceXTests.swift */; };
 		09D2E4EA27AB4D9000300A38 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2E4E827AB4D9000300A38 /* UIExtension.swift */; };
 		09D2E4EC27AB4DC300300A38 /* HomeLaunchSectionBuilderInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2E4EB27AB4DC300300A38 /* HomeLaunchSectionBuilderInput.swift */; };
 		09D2E4EE27AB4DCC00300A38 /* HomeCompanySectionBuilderInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2E4ED27AB4DCC00300A38 /* HomeCompanySectionBuilderInput.swift */; };
@@ -110,6 +110,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		093D6EB727B099FD0039B85B /* SpaceXKifTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXKifTests.swift; sourceTree = "<group>"; };
 		098F8324277A3FF000E89652 /* SpaceX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		098F8327277A3FF000E89652 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		098F8329277A3FF000E89652 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -178,7 +179,6 @@
 		09BA2FD127ADF0500045C455 /* HomeBuilderInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBuilderInput.swift; sourceTree = "<group>"; };
 		09BA2FD327ADF5F40045C455 /* HomeBuilderSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBuilderSpy.swift; sourceTree = "<group>"; };
 		09D2E4DE27AB4CCF00300A38 /* KIFSpaceXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KIFSpaceXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		09D2E4E727AB4D9000300A38 /* KIFSpaceXTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KIFSpaceXTests.swift; path = ../../../../Downloads/SpaceX/KIFSpaceXTests.swift; sourceTree = "<group>"; };
 		09D2E4E827AB4D9000300A38 /* UIExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIExtension.swift; path = ../../../../Downloads/SpaceX/UIExtension.swift; sourceTree = "<group>"; };
 		09D2E4EB27AB4DC300300A38 /* HomeLaunchSectionBuilderInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeLaunchSectionBuilderInput.swift; path = ../../../../../../../../../Downloads/SpaceX/HomeLaunchSectionBuilderInput.swift; sourceTree = "<group>"; };
 		09D2E4ED27AB4DCC00300A38 /* HomeCompanySectionBuilderInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeCompanySectionBuilderInput.swift; path = ../../../../../../../../../Downloads/SpaceX/HomeCompanySectionBuilderInput.swift; sourceTree = "<group>"; };
@@ -685,8 +685,8 @@
 			isa = PBXGroup;
 			children = (
 				09D2E4EF27AB584C00300A38 /* Spies */,
-				09D2E4E727AB4D9000300A38 /* KIFSpaceXTests.swift */,
 				09D2E4E827AB4D9000300A38 /* UIExtension.swift */,
+				093D6EB727B099FD0039B85B /* SpaceXKifTests.swift */,
 			);
 			path = KIFSpaceXTests;
 			sourceTree = "<group>";
@@ -1123,11 +1123,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09D2E4E927AB4D9000300A38 /* KIFSpaceXTests.swift in Sources */,
 				09BA2FD427ADF5F40045C455 /* HomeBuilderSpy.swift in Sources */,
 				09D2E4F327AB5A8D00300A38 /* HomeCompanySectionBuilderSpy.swift in Sources */,
 				09D2E4F527AB5B4000300A38 /* BaseRequestSpy.swift in Sources */,
 				09D2E4EA27AB4D9000300A38 /* UIExtension.swift in Sources */,
+				093D6EB827B099FD0039B85B /* SpaceXKifTests.swift in Sources */,
 				09D2E4F127AB589E00300A38 /* HomeLaunchSectionBuilderSpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
