@@ -3,7 +3,7 @@
 //  SpaceXTests
 //
 //  Created by hugo.coutinho on 18/12/21.
-//  Copyright © 2021 Mindera. All rights reserved.
+//  Copyright © 2021 . All rights reserved.
 //
 
 import XCTest

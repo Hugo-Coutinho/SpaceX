@@ -3,7 +3,7 @@
 //  SpaceX
 //
 //  Created by hugo.coutinho on 16/12/21.
-//  Copyright © 2021 Mindera. All rights reserved.
+//  Copyright © 2021 . All rights reserved.
 //
 
 // MARK: - PRESENTER INPUT PROTOCOL -

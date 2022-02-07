@@ -3,7 +3,7 @@
 //  SpaceX
 //
 //  Created by Ivo Silva on 18/09/2020.
-//  Copyright © 2020 Mindera. All rights reserved.
+//  Copyright © 2020 . All rights reserved.
 //
 
 import UIKit
