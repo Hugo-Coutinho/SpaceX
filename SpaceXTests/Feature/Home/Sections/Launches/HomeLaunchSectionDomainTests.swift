@@ -16,7 +16,7 @@ class HomeLaunchSectionDomainTests: XCTestCase {
     func test_shouldMatchDate() {
         // 1. GIVEN
         let sut: HomeLaunchSectionDomain = HomeLaunchSectionDomain(launches: [LaunchEntity.getLaunchEntityMock()], dateHelper: dateHelper)
-        let expected = "2018/04/10 - 1:00 AM"
+        let expected = "2018/04/10 - 5:00 AM"
 
         // 2. WHEN
 

@@ -73,13 +73,13 @@
 		09BA2FD027ADEFC30045C455 /* HomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BA2FCF27ADEFC30045C455 /* HomeBuilder.swift */; };
 		09BA2FD227ADF0500045C455 /* HomeBuilderInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BA2FD127ADF0500045C455 /* HomeBuilderInput.swift */; };
 		09BA2FD427ADF5F40045C455 /* HomeBuilderSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BA2FD327ADF5F40045C455 /* HomeBuilderSpy.swift */; };
-		09D2E4EA27AB4D9000300A38 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2E4E827AB4D9000300A38 /* UIExtension.swift */; };
-		09D2E4EC27AB4DC300300A38 /* HomeLaunchSectionBuilderInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2E4EB27AB4DC300300A38 /* HomeLaunchSectionBuilderInput.swift */; };
-		09D2E4EE27AB4DCC00300A38 /* HomeCompanySectionBuilderInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2E4ED27AB4DCC00300A38 /* HomeCompanySectionBuilderInput.swift */; };
 		09D2E4F127AB589E00300A38 /* HomeLaunchSectionBuilderSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2E4F027AB589E00300A38 /* HomeLaunchSectionBuilderSpy.swift */; };
 		09D2E4F327AB5A8D00300A38 /* HomeCompanySectionBuilderSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2E4F227AB5A8D00300A38 /* HomeCompanySectionBuilderSpy.swift */; };
 		09D2E4F527AB5B4000300A38 /* BaseRequestSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2E4F427AB5B4000300A38 /* BaseRequestSpy.swift */; };
 		0DC40BF50C4725939A6EE53C /* Pods_SpaceX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 857F5AD4225F7AC0445FE989 /* Pods_SpaceX.framework */; };
+		9ABE06BC27E5E2600031643E /* HomeLaunchSectionBuilderInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABE06BB27E5E2600031643E /* HomeLaunchSectionBuilderInput.swift */; };
+		9ABE06BE27E5E2C70031643E /* HomeCompanySectionBuilderInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABE06BD27E5E2C70031643E /* HomeCompanySectionBuilderInput.swift */; };
+		9ABE06C027E5E4710031643E /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABE06BF27E5E4710031643E /* UIExtension.swift */; };
 		A499395CAE79F04E1A96D0A0 /* Pods_KIFSpaceXTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73B054623BAAA3D61472E676 /* Pods_KIFSpaceXTests.framework */; };
 		B91E1EBD7C846DB180C0F797 /* Pods_SpaceXTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A9EA75664534EEABFA451C8 /* Pods_SpaceXTests.framework */; };
 		F064EECFC15755243D7F48A2 /* Pods_SpaceX_SpaceXUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D70A448AB8A2F0AC15356C6 /* Pods_SpaceX_SpaceXUITests.framework */; };
@@ -179,9 +179,6 @@
 		09BA2FD127ADF0500045C455 /* HomeBuilderInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBuilderInput.swift; sourceTree = "<group>"; };
 		09BA2FD327ADF5F40045C455 /* HomeBuilderSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBuilderSpy.swift; sourceTree = "<group>"; };
 		09D2E4DE27AB4CCF00300A38 /* KIFSpaceXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KIFSpaceXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		09D2E4E827AB4D9000300A38 /* UIExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIExtension.swift; path = ../../../../Downloads/SpaceX/UIExtension.swift; sourceTree = "<group>"; };
-		09D2E4EB27AB4DC300300A38 /* HomeLaunchSectionBuilderInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeLaunchSectionBuilderInput.swift; path = ../../../../../../../../../Downloads/SpaceX/HomeLaunchSectionBuilderInput.swift; sourceTree = "<group>"; };
-		09D2E4ED27AB4DCC00300A38 /* HomeCompanySectionBuilderInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeCompanySectionBuilderInput.swift; path = ../../../../../../../../../Downloads/SpaceX/HomeCompanySectionBuilderInput.swift; sourceTree = "<group>"; };
 		09D2E4F027AB589E00300A38 /* HomeLaunchSectionBuilderSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLaunchSectionBuilderSpy.swift; sourceTree = "<group>"; };
 		09D2E4F227AB5A8D00300A38 /* HomeCompanySectionBuilderSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCompanySectionBuilderSpy.swift; sourceTree = "<group>"; };
 		09D2E4F427AB5B4000300A38 /* BaseRequestSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseRequestSpy.swift; path = SpaceXTests/Spies/BaseRequestSpy.swift; sourceTree = SOURCE_ROOT; };
@@ -195,6 +192,9 @@
 		8A9EA75664534EEABFA451C8 /* Pods_SpaceXTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceXTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CA4DFF274483FEF448DD5D3 /* Pods-SpaceXTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceXTests.release.xcconfig"; path = "Target Support Files/Pods-SpaceXTests/Pods-SpaceXTests.release.xcconfig"; sourceTree = "<group>"; };
 		937E9387B3D44D5CE9159743 /* Pods-KIFSpaceXTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIFSpaceXTests.debug.xcconfig"; path = "Target Support Files/Pods-KIFSpaceXTests/Pods-KIFSpaceXTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9ABE06BB27E5E2600031643E /* HomeLaunchSectionBuilderInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLaunchSectionBuilderInput.swift; sourceTree = "<group>"; };
+		9ABE06BD27E5E2C70031643E /* HomeCompanySectionBuilderInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCompanySectionBuilderInput.swift; sourceTree = "<group>"; };
+		9ABE06BF27E5E4710031643E /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
 		E67C714D6DF76E3E55514FE9 /* Pods-SpaceXTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceXTests.debug.xcconfig"; path = "Target Support Files/Pods-SpaceXTests/Pods-SpaceXTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EF74FBC445FDAC89C0478BD6 /* Pods-SpaceX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX.release.xcconfig"; path = "Target Support Files/Pods-SpaceX/Pods-SpaceX.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -380,8 +380,8 @@
 		098F8367277A405900E89652 /* Builder */ = {
 			isa = PBXGroup;
 			children = (
-				09D2E4EB27AB4DC300300A38 /* HomeLaunchSectionBuilderInput.swift */,
 				098F8368277A405900E89652 /* HomeLaunchSectionBuilder.swift */,
+				9ABE06BB27E5E2600031643E /* HomeLaunchSectionBuilderInput.swift */,
 			);
 			path = Builder;
 			sourceTree = "<group>";
@@ -463,8 +463,8 @@
 		098F837B277A405900E89652 /* Builder */ = {
 			isa = PBXGroup;
 			children = (
-				09D2E4ED27AB4DCC00300A38 /* HomeCompanySectionBuilderInput.swift */,
 				098F837C277A405900E89652 /* HomeCompanySectionBuilder.swift */,
+				9ABE06BD27E5E2C70031643E /* HomeCompanySectionBuilderInput.swift */,
 			);
 			path = Builder;
 			sourceTree = "<group>";
@@ -685,8 +685,8 @@
 			isa = PBXGroup;
 			children = (
 				09D2E4EF27AB584C00300A38 /* Spies */,
-				09D2E4E827AB4D9000300A38 /* UIExtension.swift */,
 				093D6EB727B099FD0039B85B /* SpaceXKifTests.swift */,
+				9ABE06BF27E5E4710031643E /* UIExtension.swift */,
 			);
 			path = KIFSpaceXTests;
 			sourceTree = "<group>";
@@ -1046,13 +1046,13 @@
 				098F8396277A405900E89652 /* HomeCompanySection.swift in Sources */,
 				098F83BE277A409F00E89652 /* Thread.swift in Sources */,
 				098F83B9277A409F00E89652 /* Constant.swift in Sources */,
-				09D2E4EC27AB4DC300300A38 /* HomeLaunchSectionBuilderInput.swift in Sources */,
 				098F83BC277A409F00E89652 /* BaseRequest.swift in Sources */,
 				098F8399277A405900E89652 /* HomeCompanySectionInteractor.swift in Sources */,
 				098F83B5277A409F00E89652 /* SectionInput.swift in Sources */,
 				098F8386277A405900E89652 /* HomeLaunchSectionPresenter.swift in Sources */,
 				098F8385277A405900E89652 /* LaunchEntity.swift in Sources */,
 				098F8398277A405900E89652 /* HomeCompanySectionDomain.swift in Sources */,
+				9ABE06BE27E5E2C70031643E /* HomeCompanySectionBuilderInput.swift in Sources */,
 				098F838A277A405900E89652 /* HomeLaunchSectionServiceInput.swift in Sources */,
 				098F8389277A405900E89652 /* HomeLaunchSectionService.swift in Sources */,
 				098F83B7277A409F00E89652 /* ReusableIdentifier.swift in Sources */,
@@ -1063,7 +1063,6 @@
 				09BA2FD227ADF0500045C455 /* HomeBuilderInput.swift in Sources */,
 				098F838D277A405900E89652 /* HomeLaunchSectionDomain.swift in Sources */,
 				098F8388277A405900E89652 /* HomeLaunchSectionSuccessTableViewCell.swift in Sources */,
-				09D2E4EE27AB4DCC00300A38 /* HomeCompanySectionBuilderInput.swift in Sources */,
 				098F8387277A405900E89652 /* HomeLaunchSectionPresenterInput.swift in Sources */,
 				098F839A277A405900E89652 /* HomeCompanySectionInteractorInput.swift in Sources */,
 				098F83BA277A409F00E89652 /* ReusableCellIdentifiable.swift in Sources */,
@@ -1080,6 +1079,7 @@
 				098F838C277A405900E89652 /* HomeLaunchSectionBuilder.swift in Sources */,
 				098F8392277A405900E89652 /* HomeCompanySectionPresenterInput.swift in Sources */,
 				098F83B8277A409F00E89652 /* LoadingTableViewCell.swift in Sources */,
+				9ABE06BC27E5E2600031643E /* HomeLaunchSectionBuilderInput.swift in Sources */,
 				098F838F277A405900E89652 /* HomeLaunchSectionInteractorInput.swift in Sources */,
 				098F83BB277A409F00E89652 /* DateHelper.swift in Sources */,
 				098F838E277A405900E89652 /* HomeLaunchSectionInteractor.swift in Sources */,
@@ -1126,7 +1126,7 @@
 				09BA2FD427ADF5F40045C455 /* HomeBuilderSpy.swift in Sources */,
 				09D2E4F327AB5A8D00300A38 /* HomeCompanySectionBuilderSpy.swift in Sources */,
 				09D2E4F527AB5B4000300A38 /* BaseRequestSpy.swift in Sources */,
-				09D2E4EA27AB4D9000300A38 /* UIExtension.swift in Sources */,
+				9ABE06C027E5E4710031643E /* UIExtension.swift in Sources */,
 				093D6EB827B099FD0039B85B /* SpaceXKifTests.swift in Sources */,
 				09D2E4F127AB589E00300A38 /* HomeLaunchSectionBuilderSpy.swift in Sources */,
 			);
