@@ -17,7 +17,6 @@ class SpaceXKifTests: XCTestCase {
     override func setUp() {
         tester = tester()
         let vc = HomeBuilderSpy().make()
-        tester.wait(forTimeInterval: 10.0)
         setRootViewController(UINavigationController(rootViewController: vc))
     }
 

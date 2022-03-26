@@ -10,10 +10,11 @@ import KIF
 
 extension XCTestCase {
     func setRootViewController(_ vc: UIViewController) {
-        UIApplication.shared.windows.first?.removeFromSuperview()
-        UIApplication.shared.windows.first?.rootViewController = vc
-        UIApplication.shared.windows.first?.makeKeyAndVisible()
-        tester().waitForAnimationsToFinish()
+        UIApplication.shared.windows.first?.rootViewController?.dismiss(animated: false, completion: {
+            self.tester().wait(forTimeInterval: 10.0)
+            UIApplication.shared.windows.first?.rootViewController = vc
+            UIApplication.shared.windows.first?.makeKeyAndVisible()
+        })
     }
     
     func tester(file : String = #file, _ line : Int = #line) -> KIFUITestActor {
